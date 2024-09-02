@@ -1,0 +1,24 @@
+// For compile of design and test bench and store in a single file
+iverilog -o output_sim design.v testbench.v
+
+// Run the Simulation
+vvp output_sim
+
+//View the Waveform Using GTKWave
+gtkwave out.vcd 
+
+// Run Synthesis and schematic view 
+
+//** 1) using BLIF and netlistsvg
+yosys -p "synth -top top_module; write_blif output.blif" design.v
+yosys -p "read_blif output.blif; write_json output.json"
+netlistsvg output.json -o blif_synth.svg
+
+// 2) using Gate-Level Netlist and netlistsvg
+yosys -p "synth -top top_module; write_verilog output_gate.v" design.v
+yosys -p "read_verilog output_gate.v; write_json gate_level.json"
+netlistsvg gate_level.json -o gate_synth.svg
+
+// 3) using JSON and netlistsvg
+yosys -p "synth -top top_module; write_json output.json" design.v
+netlistsvg output.json -o json_synth.svg
