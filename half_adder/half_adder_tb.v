@@ -10,7 +10,7 @@ module half_adder_tb;
         .sum(Sum),
         .carry(Carry)
     );
-
+ 
     initial begin
         $monitor("Time = %0t : A = %b, B = %b -> Sum = %b, Carry = %b", 
                  $time, A, B, Sum, Carry);
