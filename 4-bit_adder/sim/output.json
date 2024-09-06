@@ -3,7 +3,7 @@
   "modules": {
     "full_adder": {
       "attributes": {
-        "src": "4bit_adder.v:19"
+        "src": "../design.v:19"
       },
       "ports": {
         "a": {
@@ -144,35 +144,35 @@
           "hide_name": 0,
           "bits": [ 2 ],
           "attributes": {
-            "src": "4bit_adder.v:19"
+            "src": "../design.v:19"
           }
         },
         "b": {
           "hide_name": 0,
           "bits": [ 3 ],
           "attributes": {
-            "src": "4bit_adder.v:19"
+            "src": "../design.v:19"
           }
         },
         "c": {
           "hide_name": 0,
           "bits": [ 4 ],
           "attributes": {
-            "src": "4bit_adder.v:19"
+            "src": "../design.v:19"
           }
         },
         "cout": {
           "hide_name": 0,
           "bits": [ 6 ],
           "attributes": {
-            "src": "4bit_adder.v:20"
+            "src": "../design.v:20"
           }
         },
         "sum": {
           "hide_name": 0,
           "bits": [ 5 ],
           "attributes": {
-            "src": "4bit_adder.v:20"
+            "src": "../design.v:20"
           }
         }
       }
@@ -180,7 +180,7 @@
     "ripple_carry_adder": {
       "attributes": {
         "top": 1,
-        "src": "4bit_adder.v:1"
+        "src": "../design.v:1"
       },
       "ports": {
         "a": {
@@ -212,7 +212,7 @@
           },
           "attributes": {
             "module_not_derived": 1,
-            "src": "4bit_adder.v:8"
+            "src": "../design.v:8"
           },
           "port_directions": {
             "a": "input",
@@ -236,7 +236,7 @@
           },
           "attributes": {
             "module_not_derived": 1,
-            "src": "4bit_adder.v:10"
+            "src": "../design.v:10"
           },
           "port_directions": {
             "a": "input",
@@ -260,7 +260,7 @@
           },
           "attributes": {
             "module_not_derived": 1,
-            "src": "4bit_adder.v:12"
+            "src": "../design.v:12"
           },
           "port_directions": {
             "a": "input",
@@ -284,7 +284,7 @@
           },
           "attributes": {
             "module_not_derived": 1,
-            "src": "4bit_adder.v:14"
+            "src": "../design.v:14"
           },
           "port_directions": {
             "a": "input",
@@ -307,42 +307,42 @@
           "hide_name": 0,
           "bits": [ 2, 3, 4, 5 ],
           "attributes": {
-            "src": "4bit_adder.v:2"
+            "src": "../design.v:2"
           }
         },
         "b": {
           "hide_name": 0,
           "bits": [ 6, 7, 8, 9 ],
           "attributes": {
-            "src": "4bit_adder.v:2"
+            "src": "../design.v:2"
           }
         },
         "c_in": {
           "hide_name": 0,
           "bits": [ 10 ],
           "attributes": {
-            "src": "4bit_adder.v:3"
+            "src": "../design.v:3"
           }
         },
         "c_out": {
           "hide_name": 0,
           "bits": [ 15 ],
           "attributes": {
-            "src": "4bit_adder.v:5"
+            "src": "../design.v:5"
           }
         },
         "carry": {
           "hide_name": 0,
           "bits": [ 16, 17, 18 ],
           "attributes": {
-            "src": "4bit_adder.v:6"
+            "src": "../design.v:6"
           }
         },
         "sum": {
           "hide_name": 0,
           "bits": [ 11, 12, 13, 14 ],
           "attributes": {
-            "src": "4bit_adder.v:4"
+            "src": "../design.v:4"
           }
         }
       }

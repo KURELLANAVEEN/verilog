@@ -2,7 +2,7 @@
 iverilog -o output_sim design.v testbench.v
 
 // Run the Simulation
-vvp output_sim
+vvp output_sim +exit
 
 //View the Waveform Using GTKWave
 gtkwave out.vcd 
